@@ -1,4 +1,4 @@
-Welcome to the personal website of Derek Daquel. I am a `Software Engineering` student at `UNSW Australia`.
+Welcome to the the personal site of Derek Daquel.
 
 From here you can visit:
 
@@ -6,6 +6,12 @@ From here you can visit:
 
 [derekdaquel.com/resume](/resume)
 
-**Personal projects**
+**My personal projects**
 
 Currently no personal projects are available. Will be accessible shortly via `derekdaquel.com/project-name`.
+
+**My socials**
+
+- [Facebook](facebook.com/ddaquel)
+- [Instagram](instagram.com/ddaquel)
+- [LinkedIn](linkedin.com/in/ddaquel)
