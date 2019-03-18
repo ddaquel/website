@@ -1,12 +1,10 @@
-# Welcome to derekdaquel.com!
-
-My name is Derek Daquel. I am a Software Engineering Student at UNSW Australia. This is my personal website hosted via `GitHub Pages`.
+Welcome to the personal website of Derek Daquel. I am a `Software Engineering` student at `UNSW Australia`.
 
 From here you can visit:
 
 ## My online resume
 
-[derekdaquel.com/resume](derekdaquel.com/resume)
+[derekdaquel.com/resume](/resume)
 
 ## Personal projects
 
