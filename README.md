@@ -1,7 +1,5 @@
 # Welcome to derekdaquel.com!
 
-<img src="photo.jpg">
-
 My name is Derek Daquel. I am a Software Engineering Student at UNSW Australia. This is my personal website hosted via `GitHub Pages`.
 
 From here you can visit:
