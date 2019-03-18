@@ -4,7 +4,7 @@ From here you can visit:
 
 **My online resume**
 
-[derekdaquel.com/resume](/resume)
+[derekdaquel.com/resume](http://derekdaquel.com/resume)
 
 **My personal projects**
 
@@ -12,6 +12,6 @@ Currently no personal projects are available. Will be accessible shortly via `de
 
 **My socials**
 
-- [Facebook](facebook.com/ddaquel)
-- [Instagram](instagram.com/ddaquel)
-- [LinkedIn](linkedin.com/in/ddaquel)
+- [Facebook](https://facebook.com/ddaquel)
+- [Instagram](https://instagram.com/ddaquel)
+- [LinkedIn](https://linkedin.com/in/ddaquel)
