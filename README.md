@@ -1,4 +1,4 @@
-Welcome to the the personal site of Derek Daquel.
+Welcome to the personal site of Derek Daquel.
 
 From here you can visit:
 
