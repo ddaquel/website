@@ -4,7 +4,7 @@ From here you can visit:
 
 **My online resume**
 
-[derekdaquel.com/resume](http://derekdaquel.com/resume)
+Currently not available. Will be accessible shortly.
 
 **My personal projects**
 
