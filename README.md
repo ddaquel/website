@@ -1,4 +1,4 @@
-Welcome to the personal site of Derek Daquel.
+Welcome to the personal site of Derek Daquel!
 
 From here you can visit:
 
@@ -9,6 +9,10 @@ Currently not available. Will be accessible shortly.
 **My personal projects**
 
 Currently no personal projects are available. Will be accessible shortly via `derekdaquel.com/project-name`.
+
+**My personal learning Github Repository**
+
+Currently not available. Will be accessible shortly.
 
 **My socials**
 
