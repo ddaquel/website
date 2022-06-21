@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title> Derek Daquel Online </title>
+    <title> Derek Daquel </title>
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,134 +9,16 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Luckiest+Guy" />
-
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     
   </head>
   <body>
-    <!-- SITE LOGO AND INFO -->
-    <nav class="navbar"> 
-      <div class="navbar-block-left">
-        <img class="logo" src="/assets/icon.svg"></img>
-      </div>
-      <div class="navbar-title"> 
-        <div class="block-middle"> 
-          <h1 class="name"> Derek Daquel </h1>
-          <h1 class="name-short"> Derek </h1>
-        </div>
-      </div>
-      <div class="navbar-block-right"> 
-        <div class="block-right">
-          <div class="flex-right">
-            <a href="https://www.linkedin.com/in/ddaquel/" target="_blank"> 
-                <img id="linkedin" class="linkedin" src="/assets/linkedin.png"/>
-            </a>
-            <a href="https://github.com/ddaquel" target="_blank" style="margin-left: 70px;"> 
-              <img id="github" class="github" src="/assets/github.png"/>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    
+
     <main class="container"> 
-
-      <!-- LINKS IF SMALL DISPLAY -->
-      <div id="links-small" class="block-left"> 
-        <h2 style="color: greenyellow; "> Links: </h2> 
-        <p> <span style="color: greenyellow;"> ◉ </span> <a href="https://www.linkedin.com/in/ddaquel/" target="_blank"> LinkedIn</a> </p> 
-        <p> <span style="color: greenyellow;"> ◉ </span> <a href="https://github.com/ddaquel" target="_blank"> GitHub</a> </p> 
-      </div>
-
-      <!-- PROJECTS -->
       <div class="block-left"> 
-        <h2 style="color: greenyellow; "> Projects: </h2> 
-        <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active spoons-background" data-bs-interval="1000000">
-              <div class="carousel-overlay"> 
-                <div class="flex-middle"> 
-                  <img class="spoons-logo" src="/assets/spoons.svg" alt="Spoons">
-                </div>
-                <div class="carousel-caption">
-                  <h1>Coming soon...</h1>
-                  <h4>Online Multiplayer version of the classic card game 'Spoons'.</h4>
-                  <h4>HOST a game and INVITE your friends!</h4>
-                  <!-- <a href="/spoons" target="_blank"> 
-                    <button id="spoons" type="button" class="btn btn-primary spoons-button"> Try it out! </button>
-                  </a> -->
-                  
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <div class="carousel-overlay"> 
-                <div class="flex-middle"> 
-                  <img class="stay-tuned-logo" src="/assets/stay-tuned.png">
-                </div>
-                <div class="carousel-caption">
-                  <h2>Stay tuned!</h2>
-                  <h4>Once my re-usable host / lobby invite system is in place, I will begin to gather ideas for new games / tools to start developing!</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      
-      <!-- STATUS -->
-      <div class="block-left"> 
-        <h2 style="color: greenyellow; "> Current role/s: </h2> 
-        <div class="flex-left">
-          <img class="logos" src="/assets/ofx.png" alt="OFX Logo"/>
-          <h5> Junior Software Engineer </h5> 
-        </div>
-        <div class="flex-left"> 
-          <img class="logos" src="/assets/unsw.png" alt="OFX Logo"/>
-          <h5> Co-op Scholar in Software Engineering (Final Year) </h5> 
-        </div>
-      </div>
-
-      <!-- CAREER PROFILE -->
-      <div class="block-left"> 
-        <h2 style="color: greenyellow; "> Career Profile: </h2> 
-        <h4> Major interest = Frontend Development & Projects </h4> 
-        <div class="block-left" style="margin-top: 20px;">
-          <p> <span style="color: greenyellow;"> ◉ </span> Tech Stack Experience: React, JavaScript, HTML & CSS </p> 
-          <p> <span style="color: greenyellow;"> ◉ </span> Project Experience: </p>
-          <div class="indent">
-            <p> <span style="color: greenyellow;"> ◉  </span> Changelog feature for internal Android app at Atlassian  </p> 
-            <p> <span style="color: greenyellow;"> ◉  </span> Introduced micro-frontend architecture at OFX  </p> 
-            <p> <span style="color: greenyellow;"> ◉  </span> Setting up my personal website (derekdaquel.com) </p> 
-            <p> <span style="color: greenyellow;"> ◉  </span> Currently, doing my UNSW Graduate Thesis on Mobile Motion Tracking (Android) and building an online Multiplayer version of the card game 'Spoons'</p> 
-          </div> 
-          <p> <span style="color: greenyellow;"> ◉ </span> Personal goals: Backend Development, Mobile Development </p> 
-        </div>
+        <h2> Derek Daquel's website is currently under reconstruction... </h2> 
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
