@@ -9,18 +9,71 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kodchasan">
     <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     
   </head>
   <body>
 
-    <main class="container"> 
-      <div class="block-left"> 
-        <h2> Derek Daquel's website is currently under reconstruction... </h2> 
-      </div>
+    <main class="container">
+        <nav id="nav">
+          <div> </div>
+          <div class="nav-item" id="btn-home"> HOME </div>
+          <div class="nav-item" id="btn-experience"> EXPERIENCE </div>
+          <div class="nav-item" id="btn-brand"> BRAND </div>
+          <div class="nav-item" id="btn-socials"> SOCIALS </div> 
+          <div> </div>
+        </nav>  
+
+        <div class="content"> 
+          <div id="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="content-home"> 
+            <div id="content-home-text"> 
+              <p> Hi, my name is</p>
+              <h1 id="name"> Derek Daquel. </h1>
+              <img id="content-home-img-mobile" src="assets/Derek Daquel.png"/>
+              <br/>
+              <p> Welcome to my website! I'm 23 years old and currently work as a Junior Software Engineer at <a id="content-home-ofx-link" href="https://www.ofx.com"> OFX</a>. This website will serve as an online portfolio. </p>
+              <p> For any official / business enquires, please email me at: <a id="content-home-email-link" href="mailto:derekdaqeul@gmail.com?subject=Business%20enquiry%20(contacted%20from%20derekdaquel.com)"> derekdaquel@gmail.com </a></p>
+              <p> Use the top navigation bar for more info about me &#128513</p>
+            </div>
+            <img id="content-home-img-web" src="assets/Derek Daquel.png"/>
+          </div>
+          
+          <div id="content-experience">
+            Experience
+          </div>
+
+          <div id="content-brand">
+            <img id="content-brand-logo" src="assets/PRIMARY LOGO - DARK.svg"/>
+            <p > During June of 2022, I created a personal brand to attach to any project and content I create online. With most of my current experience as a Software Engineer being in frontend web development, I am interesting in working on fun and hands-on projects in a wide range of areas. I will be taking an unstructured, agile approach to my project development where I will quickly develop plans but will learn mostly from pushing out content or code as quick as I can and will adapt to new goals and mistakes.</p>
+            <p> These projects will range from: </p>
+            <ul> 
+              <li> Web / mobile applications </li>
+              <li> Games </li>
+              <li> User interface designs </li>
+              <li> Photo / video editing for social media </li>
+              <li> ... and more! </li>  
+            </ul>
+            <p> Visit this link for all the news and updates relating to my online projects: <a id="content-brand-link-container" href="https://drkdql.com"> CLICK HERE </a> </p>
+          </div>
+
+          <div id="content-socials">
+            <div></div>
+            <div class="content-item-padding"> Updating soon... </div>
+            <!-- TODO -->
+          </div>
+
+        </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
