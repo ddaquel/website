@@ -10,6 +10,11 @@ const socialsContent = document.getElementById('content-socials');
 
 const spinner = document.getElementById('spinner');
 
+const linkedin = document.getElementById('linkedin');
+const instagram = document.getElementById('instagram');
+const facebook = document.getElementById('facebook');
+const tiktok = document.getElementById('tiktok');
+
 const showContent = (hash) => {
 
     spinner.style.display = 'none';
@@ -113,4 +118,20 @@ brandBtn.onclick = () => {
 
 socialsBtn.onclick = () => {
     navigateTo('#socials')
+}
+
+linkedin.onclick = () => {
+    window.location.href = "https://linkedin.com/in/ddaquel";
+}
+
+instagram.onclick = () => {
+    window.location.href = "https://instagram.com/ddaquel";
+}
+
+facebook.onclick = () => {
+    window.location.href = "https://facebook.com/ddaquel";
+}
+
+tiktok.onclick = () => {
+    window.location.href = "https://tiktok.com/@ddaquel";
 }
