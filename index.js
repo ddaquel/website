@@ -15,6 +15,10 @@ const instagram = document.getElementById('instagram');
 const facebook = document.getElementById('facebook');
 const tiktok = document.getElementById('tiktok');
 
+const currentJobLink = document.getElementById('content-home-job-link');
+const emailLink = document.getElementById('content-home-email-link');
+const brandWebsiteLink = document.getElementById('content-brand-link-container');
+
 const showContent = (hash) => {
 
     spinner.style.display = 'none';
@@ -104,34 +108,63 @@ window.onload = () => {
     }
 }
 
+const playClickSound = () => {
+    const clickSound = new Audio('assets/click.wav');
+    clickSound.play()
+}
+
+const playClickSoundBeforeRedirect = (link) => {
+    playClickSound()
+    setTimeout(() => {
+        window.location.href = link
+    }, 200)
+}
+
 homeBtn.onclick = () => {
     navigateTo("#home")
+    playClickSound()
 }
 
 experienceBtn.onclick = () => {
     navigateTo('#experience')
+    playClickSound()
 }
 
 brandBtn.onclick = () => {
     navigateTo('#brand')
+    playClickSound()
 }
 
 socialsBtn.onclick = () => {
     navigateTo('#socials')
+    playClickSound()
+}
+
+brandWebsiteLink.onclick = () => {
+    playClickSoundBeforeRedirect("https://drkdql.com")
 }
 
 linkedin.onclick = () => {
-    window.location.href = "https://linkedin.com/in/ddaquel";
+    playClickSoundBeforeRedirect("https://linkedin.com/in/ddaquel");
 }
 
 instagram.onclick = () => {
-    window.location.href = "https://instagram.com/ddaquel";
+    playClickSoundBeforeRedirect("https://instagram.com/ddaquel");
 }
 
 facebook.onclick = () => {
-    window.location.href = "https://facebook.com/ddaquel";
+    playClickSoundBeforeRedirect("https://facebook.com/ddaquel");
 }
 
 tiktok.onclick = () => {
-    window.location.href = "https://tiktok.com/@ddaquel";
+    playClickSoundBeforeRedirect("https://tiktok.com/@ddaquel");
 }
+
+currentJobLink.onclick = () => {
+    playClickSoundBeforeRedirect("https://ofx.com")
+}
+
+emailLink.onclick = () => {
+    playClickSoundBeforeRedirect("mailto:derekdaqeul@gmail.com?subject=Business%20enquiry%20(contacted%20from%20derekdaquel.com)")
+}
+

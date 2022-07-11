@@ -14,15 +14,32 @@ body {
   position: relative;
 }
 
+a, h1, h2, p, ul, li, div {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
 a {
   text-decoration: none;
   color: white;
   display: inline-block;
+  cursor: pointer;
 }
 
 a:hover {
   color: white;
 }
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 
 /* **************************** SPINNER ******************************** */
 
@@ -151,11 +168,11 @@ a:hover {
 }
 
 #content-home-email-link:hover {
-  border-bottom: 3px solid #0079AA;
+  border-bottom: 3px solid white;
 }
 
 
-#content-home-ofx-link {
+#content-home-job-link {
   font-weight: bold;
   border-radius: 10px;
   padding-left: 10px;
@@ -164,7 +181,7 @@ a:hover {
   margin-right: 5px;
 }
 
-#content-home-ofx-link:hover {
+#content-home-job-link:hover {
   border-bottom: 3px solid #ffffff;
 }
 
@@ -234,9 +251,8 @@ a:hover {
   margin-top: 5px
 }
 
-#content-brand-link-container > div:hover {
+#content-brand-link-container:hover {
   border-bottom: 3px solid white;
-  color: #FFFFFF;
 }
 
 /* ****************************  SOCIALS  ***********************************/
