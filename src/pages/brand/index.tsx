@@ -10,7 +10,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 const Brand: NextPage = () => {
   return (
     <Layout page={BRAND}>
-      <Stack alignItems="center">
+      <Stack alignItems="center" justifyContent="center" height="100%" textAlign="center">
         <h1 className={styles.title}> Personal Brand </h1>
         <Stack direction="row" justifyContent="center">
           <img src="/assets/brand/DRKDQL.svg" height="50px"/>
@@ -25,6 +25,7 @@ const Brand: NextPage = () => {
             <span className="bold-pink"> Photo / video editing for social media </span>
             ... and more!
           </p>
+          <br/>
         </Stack>
         <Button variant="contained" className={styles.brandLink} href="https://drkdql.com">
           <Stack direction="row" alignItems="center" spacing={1}>

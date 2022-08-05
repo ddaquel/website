@@ -1,1 +1,1 @@
-export { default } from  'src/pages/brand'
+export { default } from 'src/pages/brand'
