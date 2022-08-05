@@ -1,0 +1,49 @@
+.header {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    
+    background-image: linear-gradient(to right, #41B6E6, #F884D9);
+    z-index: 99;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Kodchasan';
+}
+
+.content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    padding: 20px;
+    top: 90px;
+    bottom: 56px;
+    width: 100%;
+    /* background-color: rgb(36, 37, 38, 0.7) */
+    background-color: rgb(0, 0, 0, 0.7)
+}
+
+.content::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+  
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 3px;
+}
+
+
+.bottomNavigation {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+    background-image: linear-gradient(to right, #41B6E6, #F884D9);
+    z-index: 99;
+}

@@ -1,0 +1,85 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito';
+  color: white;
+}
+
+html {
+  background-image: url('/assets/home/test/7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Kodchasan';
+  margin: 0;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+.bold-pink {
+  font-family: 'Kodchasan';
+  font-weight: bold;
+  color: #F884D9
+}
+
+.bold-blue {
+  font-family: 'Kodchasan';
+  font-weight: bold;
+  color: #41B6E6
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*  OVERRIDDEN MUI STYLES */
+.MuiBottomNavigationAction-root {
+  color: rgba(36, 37, 38, 0.7);
+  font-family: 'Kodchasan';
+}
+
+.MuiBottomNavigationAction-label {
+  font-family: 'Kodchasan';
+}
+
+.Mui-selected {
+  color: white;
+  background-color: rgba(0,0,0, 0.1);
+}
+
+.Mui-selected .MuiBottomNavigationAction-label {
+  background-color: rgba(0,0,0,0);
+}
+
+.Mui-selected svg {
+  color: white;
+}
+
+.MuiDivider-root {
+  border-color: rgb(255, 255, 255, 0.5)
+}
+
+.MuiButton-root {
+  background-image: linear-gradient(to right, #41B6E6, #F884D9);
+}
