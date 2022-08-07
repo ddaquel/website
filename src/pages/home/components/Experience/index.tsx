@@ -1,9 +1,11 @@
-import { Divider, Grid, Stack } from '@mui/material'
-import { fontFamily } from '@mui/system'
-import type { NextPage } from 'next'
-import { EXPERIENCE } from 'src/constants/pageNames'
-import { Layout } from 'src/layout'
+import * as React from 'react'
 import styles from './Experience.module.css'
+
+import { Divider, Grid, Stack } from '@mui/material'
+import Fade from 'src/shared/Fade';
+import Image from 'next/image';
+
+export interface IExperienceProps {}
 
 type Job = {
   company: string,
@@ -13,8 +15,7 @@ type Job = {
   descriptions: string[]
 }
 
-const Experience: NextPage = () => {
-
+function Experience (props: IExperienceProps) {
 
   const jobs: Job[] = [
     {
@@ -31,7 +32,7 @@ const Experience: NextPage = () => {
       ]
     },
     {
-      company: 'Macquarie Group Limited',
+      company: 'Macquarie Group',
       logo: '/assets/experience/Macquarie.png',
       period: 'Jan 2020 - Jul 2020',
       role: 'UNSW Co-op Intern',
@@ -52,7 +53,7 @@ const Experience: NextPage = () => {
       ]
     },
     {
-      company: 'Commonealth Bank of Australia',
+      company: 'CBA',
       logo: '/assets/experience/Commonwealth.png',
       period: 'Dec 2017 - Feb 2018',
       role: 'UNSW Co-op Intern',
@@ -66,10 +67,10 @@ const Experience: NextPage = () => {
 
 
   return (
-    <Layout page={EXPERIENCE}>
+    <Fade>
       <Stack alignItems="center">
-        <h1 className={styles.title}> Where have I worked? </h1>
-        <Grid container spacing={2}>  
+        <h1 className={styles.title}> JOB EXPERIENCE </h1>
+        <Grid container spacing={3}>  
             {jobs.map((job, i) => {
               return (
                 <>
@@ -79,7 +80,7 @@ const Experience: NextPage = () => {
                   <Grid item xs={3}> 
                       <Stack direction="row" spacing={2} height="100%" paddingLeft="20px">
                         <div>
-                          <img src={job.logo} height="50px"/>
+                          <Image src={job.logo} height="50px" width="50px"  alt={`Company logo for ${job.company}`}/>
                           <h3> {job.company} </h3>
                           <p> <span className="bold-blue"> {job.role} </span> </p>
                           <p style={{ fontSize: '11px'}}> {job.period} </p>
@@ -90,7 +91,7 @@ const Experience: NextPage = () => {
                     <Stack justifyContent="start">
                       <ul>
                         {job.descriptions.map((item, i) => {
-                          return <li> {item} </li>
+                          return <li key={`description-${job.company}-${i}`}> {item} </li>
                         })}
                       </ul>
                     </Stack>
@@ -100,7 +101,7 @@ const Experience: NextPage = () => {
             })}
         </Grid>
       </Stack>
-    </Layout>
+    </Fade>
   )
 }
 

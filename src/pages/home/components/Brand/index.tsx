@@ -1,19 +1,20 @@
-import { Button, Stack } from '@mui/material'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { BRAND } from 'src/constants/pageNames'
-import { Layout } from 'src/layout'
+import * as React from 'react';
 import styles from './Brand.module.css'
-import LanguageIcon from '@mui/icons-material/Language';
 
-const Brand: NextPage = () => {
+import { Button, Stack } from '@mui/material'
+import LanguageIcon from '@mui/icons-material/Language';
+import Fade from 'src/shared/Fade';
+import Image from 'next/image';
+
+export interface IBrandProps { }
+
+function Brand (props: IBrandProps ) {
   return (
-    <Layout page={BRAND}>
-      <Stack alignItems="center">
-        <h1 className={styles.title}> Personal Brand </h1>
+    <Fade>
+      <Stack alignItems="center" justifyContent="center" height="100%" textAlign="center">
+        <h1 className={styles.title}> PERSONAL BRAND  </h1>
         <Stack direction="row" justifyContent="center">
-          <img src="/assets/brand/DRKDQL.svg" height="50px"/>
+          <Image src="/assets/brand/DRKDQL.svg"  height="50px" width="300px" alt="DRKDQL brand logo"/>
         </Stack>
         <br/>
         <Stack spacing={2}>
@@ -24,6 +25,7 @@ const Brand: NextPage = () => {
             <span className="bold-blue"> User Interface Designs </span>,
             <span className="bold-pink"> Photo / video editing for social media </span>
             ... and more!
+            <br/>
           </p>
         </Stack>
         <Button variant="contained" className={styles.brandLink} href="https://drkdql.com">
@@ -33,7 +35,7 @@ const Brand: NextPage = () => {
           </Stack>
         </Button>
       </Stack>
-    </Layout>
+    </Fade> 
   )
 }
 
