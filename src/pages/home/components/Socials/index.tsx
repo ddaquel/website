@@ -1,13 +1,14 @@
-import { Button, Stack } from '@mui/material'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { SOCIALS } from 'src/constants/pageNames'
-import { Layout } from 'src/layout'
+
+import * as React from 'react';
 import styles from './Socials.module.css'
+
+import { Button, Stack } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
+import Fade from 'src/shared/Fade';
+
+export interface ISocialsProps { }
 
 type Social = {
   logo: React.ReactNode,
@@ -15,7 +16,7 @@ type Social = {
   href: string
 }
 
-const Socials: NextPage = () => {
+function Socials (props: ISocialsProps) {
 
   const socials: Social[] = [
     {
@@ -36,16 +37,16 @@ const Socials: NextPage = () => {
   ]
 
   return (
-    <Layout page={SOCIALS}>
+    <Fade> 
       <Stack alignItems="center" spacing={4} textAlign="center">
-        <h1 className={styles.title}> Connect with me! </h1>
+        <h1 className={styles.title}> CONNECT WITH ME! </h1>
         <Stack alignItems="center">
           <p> Click the icons below to view my profile 🤙 </p>
-          <p style={{ fontSize: 'small'}}> <span className='bold-pink'> Note: </span> If you would like to add or connect me, please state your reason in doing so just as a precaution if I haven't met you. Thanks!</p>
+          <p style={{ fontSize: 'small'}}> <span className='bold-pink'> Note: </span> If you would like to add or connect me, please state your reason in doing so just as a precaution if I haven{`'`}t met you. Thanks!</p>
         </Stack>
         { socials.map((item, i) => {
           return (
-            <Button variant="contained" href={item.href}>
+            <Button key={`socials-link-${i}`} variant="contained" href={item.href}>
               <Stack direction="row" alignItems="center" spacing={1}>
                 {item.logo}
                 <h3> { item.text } </h3>
@@ -54,8 +55,8 @@ const Socials: NextPage = () => {
           )
         })}
       </Stack>
-    </Layout>
-  )
+    </Fade>
+  );
 }
 
 export default Socials
