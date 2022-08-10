@@ -45,11 +45,9 @@ function Layout (props: ILayoutProps) {
         </Stack>
       </header>
       {/* MAIN CONTENT */}
-      <AnimatePresence>
-        <main className={`${styles.content}`}> 
-          {props.children}
-        </main>
-      </AnimatePresence>
+      <main className={`${styles.content}`}> 
+        {props.children}
+      </main>
       {/* BOTTOM NAVIGATION */}
       <BottomNavigation
         showLabels
@@ -60,7 +58,7 @@ function Layout (props: ILayoutProps) {
         <BottomNavigationAction label="HOME" icon={<HomeIcon/>}/>
         <BottomNavigationAction label="EXPERIENCE" icon={<WorkIcon/>}/>
         <BottomNavigationAction label="BRAND" icon={<CodeIcon/>}/>
-        <BottomNavigationAction label="SOCIALS/CONTACT" icon={<AccountTreeIcon/>}/>
+        <BottomNavigationAction label="SOCIALS" icon={<AccountTreeIcon/>}/>
       </BottomNavigation>
     </>
   );
