@@ -38,13 +38,14 @@ const Home: NextPage = () => {
           <h1 className={styles.title}> WELCOME TO MY PERSONAL WEBSITE </h1>
           <p> I am 
             <span className="bold-blue"> 23 years old </span>  
-            and currently work as a 
+            and my current role is a 
             <span className="bold-pink"> Junior Software Engineer </span>
             at:
           </p>
+          <br/>
           <Image src="/assets/home/work-logo.png"  height="60px" width="170px" style={{ paddingTop: '5px'}} alt="Logo of where I currently work"/> 
           <p> This website will serve as my <span className="bold-pink"> Online Portfolio. </span> </p>
-          <p> Use the bottom navigation bar 👇 for more info about me.  </p> 
+          {/* <p> Use the bottom navigation bar 👇 for more info about me.  </p>  */}
         </Stack>
       }
       { page === EXPERIENCE && <Experience/> }
