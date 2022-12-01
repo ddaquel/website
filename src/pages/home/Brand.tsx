@@ -1,7 +1,5 @@
-import { Stack } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import Fade from "src/components/Fade";
-import Image from "next/image";
 import Button from "src/components/Button";
 import { Picture } from "src/components/Picture";
 import { ASPECT_BRAND_LOGO } from "src/helpers/aspectRatio";
@@ -12,7 +10,7 @@ const styles = {
   wrapper: "mx-[15px] text-center tablet:text-start",
   title: "mb-[30px] text-center",
   brandLogo: "flex justify-center tablet:justify-start mb-[40px]",
-  section: "flex flex-col space-y-2 mb-[20px]",
+  section: "space-y-2 mb-[20px]",
 };
 
 function Brand(props: IBrandProps) {
@@ -44,7 +42,6 @@ function Brand(props: IBrandProps) {
         <div className={styles.section}>
           <h2> Projects </h2>
           <p>
-            {" "}
             Click the link below to view my past, present and future projects!
           </p>
           <Button href="https://drkdql.com">
@@ -56,8 +53,18 @@ function Brand(props: IBrandProps) {
           <h2> Technologies, Frameworks and Tools I have Learnt So Far </h2>
           <div>
             <p className="bold-blue"> WEB {"&"} MOBILE APP DEVELOPMENT </p>
-            <li className="bold-pink">
-              NextJS, Netlify, Github Pages/Actions, Firebase
+            <li>
+              Languages / Frameworks -{" "}
+              <span className="bold-pink">
+                Basic web dev (HTML, CSS, JS), React, NextJS
+              </span>
+            </li>
+            <li>
+              Hosting / Providers / Cloud -{" "}
+              <span className="bold-pink">
+                Netlify, Github Pages/Actions, Firebase, Google Workspace,
+                Namecheap Domains
+              </span>
             </li>
           </div>
           <div>
@@ -65,8 +72,11 @@ function Brand(props: IBrandProps) {
             <li className="bold-pink"> Figma, Photoshop </li>
           </div>
           <div>
-            <p className="bold-blue"> VIDEO EDITING </p>
-            <li className="bold-pink"> Davinci Resolve, OBS Studio, CapCut </li>
+            <p className="bold-blue"> VIDEO EDITING / STREAMING </p>
+            <li className="bold-pink">
+              {" "}
+              Davinci Resolve, OBS Studio, CapCut, YouTube Streaming{" "}
+            </li>
           </div>
         </div>
       </div>

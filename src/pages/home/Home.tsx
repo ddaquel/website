@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             <h1 className={styles.title}> WELCOME TO MY PERSONAL WEBSITE </h1>
             <p>
               I am
-              <span className="bold-blue"> 23 years old </span>
+              <span className="bold-blue"> 24 years old </span>
               and my current role is a
               <span className="bold-pink"> Junior Software Engineer </span>
               at:
