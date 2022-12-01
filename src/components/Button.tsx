@@ -10,7 +10,7 @@ export interface IButtonProps {
 
 function Button(props: IButtonProps) {
   return (
-    <motion.div whileHover={{ scale: 1.1 }}>
+    <motion.div whileHover={{ scale: 1.1 }} className="inline-block">
       <MuiButton variant="contained" href={props.href}>
         {props.children}
       </MuiButton>

@@ -26,8 +26,9 @@ export const jobs: Job[] = [
     role: "Junior Software Engineer",
     descriptions: [
       <>
-        Currently, solving <span className="bold-pink"> OKTA </span> and{" "}
-        <span className="bold-pink"> AWS </span>
+        Currently, solving <span className="bold-pink"> OKTA</span>,
+        <span className="bold-pink"> AWS </span> and
+        <span className="bold-pink"> React Native </span>
         problems for the services surrounding onboarding.
       </>,
       <>
