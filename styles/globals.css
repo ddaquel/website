@@ -10,10 +10,7 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   color: white;
-}
-
-html {
-  overflow: hidden;
+  background-color: rgb(36, 37, 38);
 }
 
 * {
@@ -34,23 +31,19 @@ p {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  font-family: "Josefin Sans";
 }
 
 h2 {
-  font-family: "Josefin Sans";
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 h3 {
-  font-family: "Josefin Sans";
   font-size: 1.125rem;
   font-weight: bold;
 }
 
 h4 {
-  font-family: "Josefin Sans";
   font-size: 1rem;
   font-weight: bold;
 }
@@ -61,64 +54,4 @@ p {
 
 li {
   list-style-type: disc;
-}
-
-/* CUSTOM STYLES */
-
-.bold-pink {
-  font-weight: bold;
-  color: #f884d9;
-}
-
-.bold-blue {
-  font-weight: bold;
-  color: #41b6e6;
-}
-
-.scrollbar {
-}
-
-.scrollbar::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 3px;
-}
-
-/*  OVERRIDDEN MUI STYLES */
-
-.MuiBottomNavigationAction-root {
-  color: #242526;
-  font-family: "Josefin Sans";
-}
-
-.MuiBottomNavigationAction-label {
-  font-family: "Josefin Sans";
-  font-size: 0.75rem;
-}
-
-.Mui-selected {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.Mui-selected .MuiBottomNavigationAction-label {
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 1rem;
-}
-
-.Mui-selected svg {
-  color: white;
-}
-
-.MuiDivider-root {
-  border-color: rgb(255, 255, 255, 0.5);
-}
-
-.MuiButton-root {
-  background-image: linear-gradient(to right, #41b6e6, #f884d9);
-  color: white;
 }
