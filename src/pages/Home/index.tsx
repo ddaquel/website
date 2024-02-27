@@ -30,10 +30,10 @@ const Home: NextPage = () => {
         </div>
         <h1>Derek Daquel</h1>
         <p>
-          <span className={styles.bold}> Age: </span> 24
+          <span className={styles.bold}> Age: </span> 25
         </p>
         <p>
-          <span className={styles.bold}> Current role/s: </span> Junior Software
+          <span className={styles.bold}> Current role/s: </span> Software
           Engineer
         </p>
       </header>
@@ -47,19 +47,27 @@ const Home: NextPage = () => {
             <div className={styles.bold}> Duration </div>
 
             <div> OFX </div>
+            <div> Software Engineer</div>
+            <div> Oct 2023 - Now</div>
+
+            <div> </div>
             <div> Junior Software Engineer</div>
-            <div> Aug 2020 - Now</div>
+            <div> Jan 2021 - Oct 2023</div>
+
+            <div> </div>
+            <div> UNSW Co-op Intern </div>
+            <div> Aug 2020 - Jan 2021</div>
 
             <div> Macquarie </div>
-            <div> Co-op Intern</div>
+            <div> UNSW Co-op Intern</div>
             <div> Jan 2020 - Jul 2020</div>
 
             <div> Atlassian </div>
-            <div> Co-op Intern</div>
+            <div> UNSW Co-op Intern</div>
             <div> Dec 2018 - Feb 2019</div>
 
             <div>Commonwealth Bank</div>
-            <div> Co-op Intern</div>
+            <div> UNSW Co-op Intern</div>
             <div> Dec 2017 - Feb 2018</div>
           </div>
         </Section>
@@ -80,7 +88,7 @@ const Home: NextPage = () => {
         <Section title="Socials">
           <div className={styles.socialGrid}>
             <a
-              href="https://facebook.com/ddaquel"
+              href="https://facebook.com/derekdaquel"
               target="_blank"
               rel="noreferrer noopener"
               className={styles.link}
@@ -88,7 +96,7 @@ const Home: NextPage = () => {
               facebook
             </a>
             <a
-              href="https://linkedin.com/in/ddaquel"
+              href="https://linkedin.com/in/derekdaquel"
               target="_blank"
               rel="noreferrer noopener"
               className={styles.link}
