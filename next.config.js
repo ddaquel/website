@@ -1,4 +1,5 @@
 module.exports = {
+  output: 'export',
   reactStrictMode: false,
   images: {
     loader: "akamai",
